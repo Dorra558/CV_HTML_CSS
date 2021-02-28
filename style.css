@@ -1,75 +1,191 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f2f2;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;  
-  }
-  
-  .topnav a:hover {
-   color: cornflowerblue;
-    
-  }
-  
-  /* .topnav a.active {
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f3f2f2;
+                font-family: 'Nunito', sans-serif;
+            }
+            
+            .topnav {
+                overflow: hidden;
+                padding: 8px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            .topnav a {
+                float: left;
+                color: rgb(224, 192, 9);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                position: relative;
+            }
+            
+            .name {
+                color: rgb(224, 192, 9);
+                font-weight: bold;
+                font-size: 40px;
+            }
+            
+            .topnav a:hover {
+                background-color: rgb(224, 192, 9);
+                color: white;
+            }
+            
+            .titl {
+                padding-top: 100px;
+                padding-left: 150px;
+                color: white;
+            }
+            
+            #titleborder {
+                width: rem;
+                background-color: #17a2b8;
+                margin-left: 630px;
+                height: 6px;
+            }
+            /* .topnav a.active {
     background-color: #4CAF50;
     color: white;
   } */
-  .back{
-   background-color: white;
-   height: 30rem;
-  }
-  .photo{
-      border-radius: 50%;  
-      float: right;
-      padding-right: 30px;
-      padding-top: 40px;
-  }
-  .description{
-      padding-top: 100px;
-      line-height: 32px;
-      padding-left: 30px;
-      font-size: 18px;
-  }
-  .sec1{
-      background-color: cornflowerblue;
-      padding: 15px;
-     text-align: center;
-     font-size: 32px;
-  }
-
-  #cercle {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: rgb(143, 187, 243);
-  
-    
-}
-.container{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-.container1{
-    display: flex;
-    justify-content: space-around;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
+            
+            .back {
+                height: 30rem;
+            }
+            
+            .photo {
+                border-radius: 60%;
+                padding-left: 30px;
+                padding-top: 40px;
+                height: 300px;
+                width: 300px;
+            }
+            
+            .description {
+                padding-top: 100px;
+                line-height: 36px;
+                padding-right: 30px;
+                font-size: 20px;
+                float: right;
+            }
+            
+            .sec1 {
+                padding: 15px;
+                text-align: center;
+                font-size: 32px;
+            }
+            
+            .aprop {
+                position: relative;
+                text-align: center;
+            }
+            
+            .aprop::after {
+                width: 8%;
+                height: 6px;
+                background: rgb(224, 192, 9);
+                content: '';
+                position: absolute;
+                left: 0;
+                margin-left: 622px;
+                bottom: -15px;
+            }
+            
+            .container {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+            }
+            
+            .contain {
+                line-height: 40px;
+            }
+            
+            .contain0 {
+                font-weight: bold;
+                font-size: 18px;
+            }
+            
+            .container1 {
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb(190, 164, 12);
+                padding: 28px;
+            }
+            
+            .compet {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .cowork {
+                width: 700px;
+                height: 400px;
+                margin-left: 50px;
+                padding-bottom: 20px;
+            }
+            
+            .docp {
+                width: 700px;
+                height: 400px;
+                float: right;
+                padding-bottom: 20px;
+                margin-right: 50px;
+            }
+            /* formulaire */
+            
+            .for {
+                margin-top: 50px;
+                transition: all 4s ease-in-out;
+            }
+            
+            .form-control {
+                width: 600px;
+                background: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid gray;
+                color: rgb(54, 53, 53);
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+            
+            #formi {
+                height: 45px;
+            }
+            
+            #for .submit {
+                background-color: rgb(224, 192, 9);
+                border-color: transparent;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                height: 50px;
+                margin-top: 20px;
+            }
+            
+            #for .submit:hover {
+                background-color: rgb(224, 192, 9);
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            
+            .forms {
+                margin-left: 30px;
+            }
+            /* end form */
+            
+            .container2 {
+                background-color: #000;
+            }
+            
+            input::-webkit-input-placeholder {
+                color: white !important;
+            }
+            
+            textarea::-webkit-input-placeholder {
+                color: white !important;
+            }
