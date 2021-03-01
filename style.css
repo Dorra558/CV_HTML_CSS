@@ -101,11 +101,15 @@
             
             .contain {
                 line-height: 40px;
+                color: black;
+                text-align: center;
             }
             
-            .contain0 {
+            #contain0 {
                 font-weight: bold;
                 font-size: 18px;
+                color: black;
+                text-align: center;
             }
             
             .container1 {
@@ -180,6 +184,7 @@
             
             .container2 {
                 background-color: #000;
+                display: flex;
             }
             
             input::-webkit-input-placeholder {
@@ -188,4 +193,15 @@
             
             textarea::-webkit-input-placeholder {
                 color: white !important;
+            }
+            
+            i {
+                color: rgb(224, 192, 9);
+                padding-top: 40px;
+                padding-left: 50px;
+            }
+            
+            span {
+                margin-left: 18px;
+                color: white;
             }
